@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+/* About Us styles */
+.aboutus__section {
+    position: relative;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .aboutus__section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://img.freepik.com/premium-vector/sky-background-video-conferencing_23-2148616500.jpg?size=626&ext=jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  
+  .aboutus__section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 136, 172, 0.4);
+    /* Purple overlay color with opacity */
+    z-index: -1;
+  }
+  
+  .aboutus__section__text {
+    margin: 12.5rem 0;
+    padding: 0 2.5rem;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .aboutus__section__text h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 143px;
+  }
+  
+  .aboutus__section__text p {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+  
+  .aboutus__section__img {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .aboutus__section__img img {
+    width: 100%;
+    height: 100%;
+    margin: 6.25rem 2.5rem;
+  }
+  
+  hr.aboutafter__line {
+    border: 0.188rem solid rgb(116, 197, 218);
+    width: 12.5rem;
+    margin-top: 1.875rem;
+  }hr.center__after__line {
+      border: 3px solid rgb(116, 197, 218);
+      width: 6.25rem;
+      margin: 1.875rem auto;
+      text-align: center;
+    }
+  /* //////////////////////////////////////////////////////////////// */
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .aboutus__section {
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+  
+    .aboutus__section__text {
+      width: 100%;
+      margin: 3rem 0;
+    }
+  
+    .aboutus__section__img {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .aboutus__section__text h1 {
+      font-size: 3rem;
+      line-height: 100px;
+    }
+  
+    .aboutus__section__text p {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+  
+    .aboutus__section::before,
+    .aboutus__section::after {
+      display: none; /* Hide the background overlay on small screens */
+    }
+  }
