@@ -1,0 +1,117 @@
+@font-face {
+    font-family: myFont;
+    src: url(../Website4Venture/glacial-indifference/GlacialIndifference-Regular.otf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: myFont;
+}
+
+/* .......................................................... *//* .......................................................... */
+.careers__section {
+    position: relative;
+    height: auto;
+}
+
+.careers__section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(https://img.freepik.com/free-photo/overworked-paralyzed-disabled-entrepreneur-man-wheelchair-sitting-desk-overworking-company_482257-7507.jpg?size=626&ext=jpg);
+    background-size: cover;
+    opacity: 0.75;
+    z-index: -1;   
+}
+
+.careers__section__text {
+    width: 50%;
+    padding: 12rem 1.25rem;
+    color: white;
+    z-index: 10;
+}
+
+.careers__section__text h1 {
+    font-size: 3rem;
+}
+
+.careers__section__text p {
+    padding: 1.875rem 0px;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    font-weight: lighter;
+    color: white;
+}
+
+hr.center__after__line {
+    border: 3px solid rgb(116, 197, 218);
+    width: 6.25rem;
+    margin: 1.875rem auto;
+    text-align: center;
+}
+
+/* media query main careers */
+
+@media screen and (max-width: 580px) {
+    .careers__section {
+        height: auto;
+    }
+
+    .careers__section__text {
+        padding: 5rem 1.5rem;
+        width: 100%;
+    }
+
+    .careers__section__text h1 {
+        font-size: 3.4rem;
+        width: 31.35rem;
+    }
+}
+/* .......................careers content................................... */
+.joinus__content{
+    width: 95%;
+    margin: 0 auto;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+.work__with__us{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.work__with__us h3{
+    font-size: 1rem;
+    color:rgb(14, 102, 156)
+}
+.work__with__us h1{
+    font-size: 2.25rem;
+    padding: 0.95rem 0;
+}
+.work__with__us p{
+    font-size: 1rem;
+    line-height: 25px;
+}
+.choose__us{
+    width: 48%;
+    background-color: pink;min-height: 500px;
+}
+@media screen and (max-width: 720px) {
+    .columns {
+        height: auto;
+      flex-direction: column;
+    }
+    .work__with__us, .choose__us{
+    width: 100%;   
+  }
+}
+/* .......................................................... */

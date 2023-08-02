@@ -209,38 +209,53 @@ hr.aboutafter__line {
     }
 }
 /****************what we does ************************************/
-.services-content{
-  margin-top: 60px;
+.services__content{
+  width: 90%;
+  margin: 6rem auto;
 }
-.services-row{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0px 80px;
-  gap:40px;
-  padding-bottom: 80px;
+.columns{
+  display: flex;
+  justify-content: space-between;
+  margin:2em 0 ;
 }
-.services-column{
-  align-items: center; 
-  margin-bottom: 10px;
+.col{
+width: 31%;
+border-radius: 10px;
+padding: 1rem;
+border: 1px solid rgb(207, 234, 241);
+min-height: 250px;
 }
-.services-icon{
-  color: rgb(116,197,218);
-  font-size: 50px;
-  margin-right: 20px;
-  padding-bottom: 20px;
+.col i{
+color: rgb(116,197,218);
+font-size: 3.125rem;
+padding-bottom: 1rem;
+display: flex;
+justify-content: center;
 }
-.services-text h3{
-  font-size: 21px;
-  padding: 0px 0px;
-  padding-bottom: 20px;
-  
+.col h3{
+font-size: 21px;
+padding: 0px 0px;
+padding-bottom: 1rem;
+display: flex;
+justify-content: center;
 }
-.services-text p{
-  font-size: 17px;
+.col p{
+text-align: justify;
+font-size: 17px;
   color:#686969;
   font-weight: 100;
   line-height: 30px;
-  text-align: justify;
+}
+@media screen and (max-width: 720px) {
+.columns {
+  flex-direction: column;
+  margin: 0;
+}
+.col{
+width: 100%;
+margin-bottom: 1.25rem;
+ 
+} 
 }
 /******************our teams**********************************/
 .our__teams {
